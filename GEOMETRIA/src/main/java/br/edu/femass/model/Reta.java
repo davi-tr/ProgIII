@@ -4,7 +4,7 @@ public class Reta {
     private Ponto p1;
     private Ponto p2;
 
-    public Reta(Ponto 1, Ponto 2){
+    public Reta(Ponto p1, Ponto p2){
         this.p1 = p1;
         this.p2 = p2;
     }
