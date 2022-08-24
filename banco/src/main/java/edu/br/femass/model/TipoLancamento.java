@@ -1,5 +1,4 @@
-package br.edu.femass.model;
+package edu.br.femass.model;
 
 public enum TipoLancamento {
-
 }

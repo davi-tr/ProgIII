@@ -1,4 +1,4 @@
-package br.edu.femass.model;
+package edu.br.femass.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String endereco;
-    private List<Conta> contas;
+    private List<Conta>contas;
 
     public Cliente(String nome, String cpf){
         this.nome = nome;

@@ -1,4 +1,4 @@
-package br.edu.femass.model;
+package edu.br.femass.model;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -27,6 +27,6 @@ public class Historico {
 
     @Override
     public String toString() {
-       return data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + "- Valor:" + this.valor.toString()+" Tipo de Lançamento:" + this.tipoLancamento.toString();
+        return data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + "- Valor:" + this.valor.toString()+" Tipo de Lançamento:" + this.tipoLancamento.toString();
     }
 }

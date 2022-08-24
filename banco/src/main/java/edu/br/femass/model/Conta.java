@@ -1,4 +1,4 @@
-package br.edu.femass.model;
+package edu.br.femass.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,3 +39,4 @@ public class Conta {
         this.especial = especial;
     }
 }
+
