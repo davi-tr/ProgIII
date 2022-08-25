@@ -1,5 +1,7 @@
 package edu.br.femass.model;
 
+import edu.br.femass.utils.Cpf;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,21 +9,38 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String endereco;
-    private List<Conta>contas;
+    private List<Conta> contas;
 
-    public Cliente(String nome, String cpf){
+    public Cliente(String nome, String cpf) {
         this.nome = nome;
+        if (Cpf.isCpf(cpf) == false) {
+            throw new IllegalArgumentException("CPF Inválido");
+        }
+        this.cpf = cpf;
+        this.contas = new ArrayList<Conta>();
+    }
+
+    public Cliente(String nome, String cpf, String endereco) {
+        this.nome = nome;
+
+        if (Cpf.isCpf(cpf) == false) {
+            throw new IllegalArgumentException("CPF Inválido");
+        }
         this.cpf = cpf;
         this.endereco = endereco;
         this.contas = new ArrayList<Conta>();
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public List<Conta> getContas() {
+        return contas;
     }
 
     public String getCpf() {
@@ -38,6 +57,17 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return this.getNome();
+        return this.nome;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Cliente cliente = (Cliente) obj;
+        return cliente.getCpf().equals(this.cpf);
+    }
+    public void criarConta(Double especial){
+        Conta conta = new Conta(especial);
+        this.contas.add(conta);
     }
 }
+
