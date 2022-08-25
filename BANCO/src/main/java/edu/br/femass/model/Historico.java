@@ -30,3 +30,4 @@ public class Historico {
         return data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + "- Valor:" + this.valor.toString()+" Tipo de Lançamento:" + this.tipoLancamento.toString();
     }
 }
+
