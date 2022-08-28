@@ -10,6 +10,7 @@ public class Historico {
 
     public Historico(Double valor, TipoLancamento tipoLancamento){
         this.data = LocalDateTime.now();
+        this.valor = valor;
         this.tipoLancamento = tipoLancamento;
     }
 
@@ -27,7 +28,11 @@ public class Historico {
 
     @Override
     public String toString() {
-        return data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + "- Valor:" + this.valor.toString()+" Tipo de Lançamento:" + this.tipoLancamento.toString();
+        return data.format(
+                DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"))
+                + " - Valor: "
+                + this.valor.toString()
+                + " - " + this.tipoLancamento.valor ;
     }
 }
 
