@@ -1,0 +1,70 @@
+[ {
+  "nome" : "João da Silva",
+  "cpf" : "79242354007",
+  "endereco" : null,
+  "contas" : [ ]
+}, {
+  "nome" : "Maria",
+  "cpf" : "25936400069",
+  "endereco" : "Rua A",
+  "contas" : [ {
+    "numero" : 1,
+    "saldo" : 9600.0,
+    "especial" : 0.0,
+    "historicos" : [ {
+      "data" : [ 2022, 9, 3, 13, 10, 56, 904726600 ],
+      "valor" : 10000.0,
+      "tipoLancamento" : "CREDITO"
+    }, {
+      "data" : [ 2022, 9, 3, 13, 10, 56, 904726600 ],
+      "valor" : 100.0,
+      "tipoLancamento" : "CREDITO"
+    }, {
+      "data" : [ 2022, 9, 3, 13, 10, 56, 904726600 ],
+      "valor" : 500.0,
+      "tipoLancamento" : "DEBITO"
+    } ],
+    "historico" : "03/09/2022 13:10:56 - Valor: 10000.0 - Crédito\n03/09/2022 13:10:56 - Valor: 100.0 - Crédito\n03/09/2022 13:10:56 - Valor: 500.0 - Débito\n"
+  }, {
+    "numero" : 2,
+    "saldo" : 0.0,
+    "especial" : 1000.0,
+    "historicos" : [ ],
+    "historico" : ""
+  } ]
+}, {
+  "nome" : "Everton",
+  "cpf" : "625.948.090-39",
+  "endereco" : "Rua 99",
+  "contas" : [ ]
+}, {
+  "nome" : "Luiz",
+  "cpf" : "446.320.750-94",
+  "endereco" : "RUA L",
+  "contas" : [ ]
+}, {
+  "nome" : "Vanessa Lima",
+  "cpf" : "079.130.840-57",
+  "endereco" : "Rua LIMA",
+  "contas" : [ ]
+}, {
+  "nome" : "Lucas Silva",
+  "cpf" : "701.253.510-54",
+  "endereco" : "Rua LIMA2",
+  "contas" : [ ]
+}, {
+  "nome" : "James",
+  "cpf" : "014.143.940-80",
+  "endereco" : "RUA KK",
+  "contas" : [ ]
+}, {
+  "nome" : "Lucio",
+  "cpf" : "846.177.700-03",
+  "endereco" : "RUA LUA",
+  "contas" : [ ]
+}, {
+  "nome" : "João Kleber",
+  "cpf" : "907.976.760-31",
+  "endereco" : "Rua Alcides",
+  "contas" : [ ]
+} ]
